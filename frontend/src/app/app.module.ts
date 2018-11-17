@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'edit/:id', component: EditComponent},
   { path: 'list', component: ListComponent},
   { path: '', redirectTo: 'list', pathMatch: 'full'}
-]
+];
 
 @NgModule({
   declarations: [
