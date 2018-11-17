@@ -13,6 +13,9 @@ import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 
 import { IssueService } from './issue.service';
+import { HomeComponent } from './home/home.component';
+import { InputComponent } from './home/input/input.component';
+import { StartComponent } from './home/start/start.component';
 
 const routes: Routes = [
   { path: 'create', component: CreateComponent},
@@ -26,7 +29,10 @@ const routes: Routes = [
     AppComponent,
     ListComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    HomeComponent,
+    InputComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
