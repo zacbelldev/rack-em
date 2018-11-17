@@ -13,6 +13,7 @@ import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 
 import { IssueService } from './issue.service';
+import { SocketTestComponent } from './socket-test/socket-test.component';
 
 const routes: Routes = [
   { path: 'create', component: CreateComponent},
@@ -26,7 +27,8 @@ const routes: Routes = [
     AppComponent,
     ListComponent,
     CreateComponent,
-    EditComponent
+    EditComponent,
+    SocketTestComponent
   ],
   imports: [
     BrowserModule,
