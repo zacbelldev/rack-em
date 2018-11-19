@@ -1,0 +1,13 @@
+input:placeholder-shown {
+	text-align: left;
+}
+
+input::placeholder {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 50;
+	color: black;
+}
+
+
+
