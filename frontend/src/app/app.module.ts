@@ -18,6 +18,7 @@ import { IssueService } from './issue.service';
 import { HomeComponent } from './home/home.component';
 import { InputComponent } from './home/input/input.component';
 import { StartComponent } from './home/start/start.component';
+import { GamePlayComponent } from './game-play/game-play.component';
 
 const routes: Routes = [
   { path: 'create', component: CreateComponent},
@@ -34,7 +35,8 @@ const routes: Routes = [
     EditComponent,
     HomeComponent,
     InputComponent,
-    StartComponent
+    StartComponent,
+    GamePlayComponent
   ],
   imports: [
     BrowserModule,
