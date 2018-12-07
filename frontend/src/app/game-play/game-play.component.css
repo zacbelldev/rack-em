@@ -5,7 +5,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 40px auto auto auto 40px;
-    grid-template-rows: 240px 100px auto 180px;
+    grid-template-rows: 240px 100px 550px 180px;
 }
 
 .drawCard {
@@ -60,6 +60,27 @@ body {
 .img {
     width: 100%;
 }
+
+/* Numbers */
+
+.top {
+    position: absolute;
+    margin: 0px;
+    font-size: 40px;
+    top: 35px;
+    right: 35px;
+}
+
+.bottom {
+    position: absolute;
+    margin: 0px;
+    font-size: 40px;
+    bottom: 35px;
+    left: 35px;
+}
+
+
+/* Cards Overlapping */
  
 .item1 {
     position: absolute;
