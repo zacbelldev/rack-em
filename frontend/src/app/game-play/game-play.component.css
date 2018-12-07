@@ -1,153 +1,187 @@
 body {
-    margin: 0 8;
+  margin: 0 20;
 }
 
+/* grid */
 .container {
-    display: grid;
-    grid-template-columns: 40px auto auto auto 40px;
-    grid-template-rows: 240px 100px 550px 180px;
+  display: grid;
+  grid-template-columns: 60px auto auto auto 60px;
+  grid-template-rows: 270px 270px 1000px 180px;
 }
 
+/* areas */
 .drawCard {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  margin: 0px 20px;
+  padding: 0px 10px;
 }
 
 .drawPile {
-    grid-column: 4 / span 1;
-    grid-row: 1 / span 1;
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+  margin: 0px 20px;
+  padding: 0px 10px;
 }
 
 .nickname {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  padding: 150px 0px 0px;
 }
 
 .numRack {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 4;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 4;
+  position: relative;
 }
 
 .rack {
-    grid-column: 2 / span 2;
-    grid-row: 3 / span 4;
-    position: relative;
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 4;
+  position: relative;
 }
 
 .score {
-    grid-column: 4 / span 1;
-    grid-row: 5 / span 1;
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
+  position: relative;
+  left: 60px;
+  bottom: 40px;
 }
 
+/* style & position */
+
 .drawCard img {
-    height: 100%;
+  height: 100%;
+}
+
+.drawNum {
+    font-size: 30px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin: 0px;
 }
 
 .drawPile img {
-    height: 100%;
-
+  padding: 2px;
+  height: 100%;
 }
 
-/* .numRack img {
-    height: 100%;
-    width: 100%;
-} */
+.nickname>h1 {
+  font-size: 45px;
+}
+
+.numRack p {
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+  width: 100%;
+}
 
 .rack div>img {
-    width: 100%;
+  width: 100%;
 }
 
 .img {
-    width: 100%;
+  width: 100%;
 }
 
-/* Numbers */
+.score>h3 {
+  margin: 7px;
+  font-size: 35px;
+}
+
+/* Rack Numbers */
 
 .top {
-    position: absolute;
-    margin: 0px;
-    font-size: 40px;
-    top: 35px;
-    right: 35px;
+  position: absolute;
+  margin: 0px;
+  font-size: 40px;
+  top: 35px;
+  right: 35px;
 }
 
 .bottom {
-    position: absolute;
-    margin: 0px;
-    font-size: 40px;
-    bottom: 35px;
-    left: 35px;
+  position: absolute;
+  margin: 0px;
+  font-size: 40px;
+  bottom: 35px;
+  left: 35px;
 }
 
 
 /* Cards Overlapping */
- 
+
 .item1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -10;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
 }
 
 .item2 {
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    z-index: -9;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  z-index: -9;
 }
 
 .item3 {
-    position: absolute;
-    top: 200px;
-    left: 0px;
-    z-index: -8;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  z-index: -8;
 }
 
 .item4 {
-    position: absolute;
-    top: 300px;
-    left: 0px;
-    z-index: -7;
+  position: absolute;
+  top: 300px;
+  left: 0px;
+  z-index: -7;
 }
 
 .item5 {
-    position: absolute;
-    top: 400px;
-    left: 0px;
-    z-index: -6;
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  z-index: -6;
 }
 
 .item6 {
-    position: absolute;
-    top: 500px;
-    left: 0px;
-    z-index: -5;
+  position: absolute;
+  top: 500px;
+  left: 0px;
+  z-index: -5;
 }
 
 .item7 {
-    position: absolute;
-    top: 600px;
-    left: 0px;
-    z-index: -4;
+  position: absolute;
+  top: 600px;
+  left: 0px;
+  z-index: -4;
 }
 
 .item8 {
-    position: absolute;
-    top: 700px;
-    left: 0px;
-    z-index: -3;
+  position: absolute;
+  top: 700px;
+  left: 0px;
+  z-index: -3;
 }
 
 .item9 {
-    position: absolute;
-    top: 800px;
-    left: 0px;
-    z-index: -2;
+  position: absolute;
+  top: 800px;
+  left: 0px;
+  z-index: -2;
 }
 
 .item10 {
-    position: absolute;
-    top: 900px;
-    left: 0px;
-    z-index: -1;
+  position: absolute;
+  top: 900px;
+  left: 0px;
+  z-index: -1;
 }
