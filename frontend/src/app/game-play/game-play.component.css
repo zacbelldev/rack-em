@@ -15,6 +15,7 @@ body {
   grid-row: 1 / span 1;
   margin: 0px 20px;
   padding: 0px 10px;
+  position: relative;
 }
 
 .drawPile {
@@ -57,6 +58,7 @@ body {
 }
 
 .drawNum {
+
     font-size: 30px;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -64,9 +66,10 @@ body {
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     margin: 0px;
+    bottom: 25px;
 }
 
-.drawPile img {
+.drawPile img { 
   padding: 2px;
   height: 100%;
 }
