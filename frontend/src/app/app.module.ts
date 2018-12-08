@@ -24,7 +24,10 @@ const routes: Routes = [
   { path: 'create', component: CreateComponent},
   { path: 'edit/:id', component: EditComponent},
   { path: 'list', component: ListComponent},
-  { path: '', redirectTo: 'list', pathMatch: 'full'}
+  { path: 'game-play', component: GamePlayComponent},
+  { path: 'home', component: HomeComponent},
+  { path: 'input', component: InputComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({
