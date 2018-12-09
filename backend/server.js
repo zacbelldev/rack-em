@@ -11,16 +11,16 @@ const router = express.Router();
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb+srv://rackemuser:PASSWORD@rackemup-l4tpf.gcp.mongodb.net/test?retryWrites=true", {
-  useNewUrlParser: true
-});
+// mongoose.connect("", {
+//   useNewUrlParser: true
+// });
 
 
 
 
-// const MongoClient = require('mongodb').MongoClient;
-// const uri = "mongodb+srv://rackemuser:<PASSWORD>@rackemup-l4tpf.gcp.mongodb.net/test?retryWrites=true";
-// const client = new MongoClient(uri, { useNewUrlParser: true });
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://rackemuser:PASSWORD@rackemup-l4tpf.gcp.mongodb.net/test?retryWrites=true";
+const client = new MongoClient(uri, { useNewUrlParser: true });
 client.connect(err => {
   const collection = client.db("rackemup").collection("draw-pile");
   // perform actions on the collection object
